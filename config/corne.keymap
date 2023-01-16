@@ -20,6 +20,131 @@
             bindings = <&kp ESCAPE>;
             key-positions = <1 2>;
         };
+
+        combo_exclaimation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <2 3>;
+        };
+
+        combo_at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <14 15 16>;
+        };
+
+        combo_hash {
+            bindings = <&kp HASH>;
+            key-positions = <1 3>;
+        };
+
+        combo_dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <1 5>;
+        };
+
+        combo_percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <2 4>;
+        };
+
+        combo_ampersand {
+            bindings = <&kp AMPS>;
+            key-positions = <19 20>;
+        };
+
+        combo_caret {
+            bindings = <&kp CARET>;
+            key-positions = <19 21>;
+        };
+
+        combo_asterisk {
+            bindings = <&kp ASTRK>;
+            key-positions = <21 20>;
+        };
+
+        combo_left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <8 7>;
+        };
+
+        combo_right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <9 8>;
+        };
+
+        combo_volume_up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <27 28>;
+        };
+
+        combo_volume_down {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <25 26>;
+        };
+
+        combo_mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <25 26 27>;
+        };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <6 7>;
+        };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <5 4>;
+        };
+
+        combo_underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <29 28>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <17 16>;
+        };
+
+        combo_plus {
+            bindings = <&kp PLUS>;
+            key-positions = <30 31>;
+        };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <18 19>;
+        };
+
+        combo_media_previous {
+            bindings = <&kp C_RW>;
+            key-positions = <13 26>;
+        };
+
+        combo_Media_Next {
+            bindings = <&kp C_FF>;
+            key-positions = <27 16>;
+        };
+
+        combo_left_control {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <24 36>;
+        };
+
+        combo_left_option {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <24 38>;
+        };
+
+        combo_single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <9 10>;
+        };
+
+        combo_apostrophe {
+            bindings = <&kp DOUBLE_QUOTES>;
+            key-positions = <10 9 20>;
+        };
     };
 
     keymap {
@@ -35,7 +160,7 @@
             bindings = <
  &kp ESCAPE   &kp Q   &kp W   &kp E     &kp R      &kp T    &kp Y      &kp U     &kp I     &kp O     &kp P   &kp BSPC
     &kp TAB   &kp A   &kp S   &kp D     &kp F      &kp G    &kp H      &kp J     &kp K     &kp L    &kp UP    &kp SQT
-  &kp LSHFT   &kp Z   &kp X   &kp C     &kp V      &kp B    &kp N      &kp M     &mo 2  &kp LEFT  &kp DOWN  &kp RIGHT
+  &kp LSHFT   &kp Z   &kp X   &kp C     &kp V      &kp B    &kp N      &kp M     &mo 3  &kp LEFT  &kp DOWN  &kp RIGHT
                               &mo 1  &kp LGUI  &kp SPACE  &kp RET  &kp SPACE  &kp RALT
             >;
         };
@@ -70,21 +195,21 @@
             >;
         };
 
-        Layer__3 {
+        Setting {
             bindings = <
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &trans  &trans  &trans  &trans   &mo 4  &trans  &trans  &trans  &trans  &trans  &trans
                          &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
-        Layer__4 {
+        Bluetooth {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans        &trans        &trans        &trans    &bt BT_PRV    &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                           &trans        &trans    &bt BT_CLR  &trans  &trans  &trans
             >;
         };
     };
