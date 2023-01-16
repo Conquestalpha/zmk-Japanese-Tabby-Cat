@@ -188,7 +188,7 @@
 
         combo_backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <21 10>;
+            key-positions = <10 11>;
         };
 
         combo_enter_left {
