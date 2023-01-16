@@ -13,6 +13,15 @@
 };
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
