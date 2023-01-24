@@ -205,6 +205,11 @@
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <26 27>;
         };
+
+        combo_slash {
+            bindings = <&kp SLASH>;
+            key-positions = <10 9 20>;
+        };
     };
 
     keymap {
