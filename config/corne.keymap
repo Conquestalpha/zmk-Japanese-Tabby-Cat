@@ -210,6 +210,11 @@
             bindings = <&kp SLASH>;
             key-positions = <10 9 20>;
         };
+
+        combo_tab_2 {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+        };
     };
 
     keymap {
