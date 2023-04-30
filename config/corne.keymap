@@ -213,7 +213,7 @@
 
         combo_space {
             bindings = <&kp SPACE>;
-            key-positions = <0 1 2>;
+            key-positions = <1 2 3>;
         };
 
         combo_space_2 {
