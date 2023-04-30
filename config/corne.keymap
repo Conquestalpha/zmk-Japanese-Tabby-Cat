@@ -215,6 +215,11 @@
             bindings = <&kp SPACE>;
             key-positions = <0 1 2>;
         };
+
+        combo_space_2 {
+            bindings = <&kp SPACE>;
+            key-positions = <15 16 17>;
+        };
     };
 
     keymap {
