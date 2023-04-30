@@ -153,7 +153,7 @@
 
         combo_slash {
             bindings = <&kp SLASH>;
-            key-positions = <32 21 10>;
+            key-positions = <21 10 11>;
         };
 
         combo_colon {
@@ -168,7 +168,7 @@
 
         combo_dot {
             bindings = <&kp DOT>;
-            key-positions = <19 9 8>;
+            key-positions = <9 8 19>;
         };
 
         combo_comma {
