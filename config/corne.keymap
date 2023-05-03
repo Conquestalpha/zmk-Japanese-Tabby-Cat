@@ -179,7 +179,7 @@
 
         combo_slash {
             bindings = <&kp SLASH>;
-            key-positions = <21 10 11>;
+            key-positions = <9 10 20>;
         };
 
         combo_colon {
