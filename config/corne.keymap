@@ -249,22 +249,22 @@
 
         combo_meme {
             bindings = <&macro_meme>;
-            key-positions = <34 33 32 31>;
+            key-positions = <34 31>;
         };
 
         combo_sad {
             bindings = <&macro_sweat>;
-            key-positions = <25 26 27 28>;
+            key-positions = <25 28>;
         };
 
         combo_thumbs_up {
             bindings = <&macro_thumbs_up>;
-            key-positions = <13 14 15 16>;
+            key-positions = <17 25>;
         };
 
         combo_cheers_benroy {
             bindings = <&macro_cheers_benroy>;
-            key-positions = <10 9 8 7>;
+            key-positions = <16 37 25>;
         };
     };
 
