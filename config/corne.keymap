@@ -253,7 +253,7 @@
         };
 
         combo_sad {
-            bindings = <&macro_sad>;
+            bindings = <&macro_sweat>;
             key-positions = <25 26 27 28>;
         };
 
