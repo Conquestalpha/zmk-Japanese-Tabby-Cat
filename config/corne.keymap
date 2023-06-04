@@ -5,9 +5,9 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
 
 #define U_MOUSE_MOVE_MAX 1400
 
@@ -288,7 +288,7 @@
 
         combo_sad {
             bindings = <&macro_sweat>;
-            key-positions = <25 29>;
+            key-positions = <25 16>;
         };
 
         combo_thumbs_up {
@@ -309,6 +309,21 @@
         combo_desktop_left {
             bindings = <&kp RC(LEFT)>;
             key-positions = <41 33>;
+        };
+
+        combo_desktop_up {
+            bindings = <&kp RC(UP_ARROW)>;
+            key-positions = <41 22>;
+        };
+
+        combo_mouse_right {
+            bindings = <&to 5>;
+            key-positions = <23 18>;
+        };
+
+        combo_mouse_left {
+            bindings = <&to 5>;
+            key-positions = <24 29>;
         };
     };
 
@@ -402,6 +417,15 @@
 &trans        &trans        &trans        &trans    &bt BT_PRV    &bt BT_NXT  &trans  &trans  &trans  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans        &trans    &bt BT_CLR  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans   &to 0   &to 0  &trans  &trans
             >;
         };
     };
