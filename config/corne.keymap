@@ -318,12 +318,17 @@
 
         combo_mouse_right {
             bindings = <&to 5>;
-            key-positions = <23 18>;
+            key-positions = <18 22>;
         };
 
         combo_mouse_left {
             bindings = <&to 5>;
-            key-positions = <24 29>;
+            key-positions = <29 25>;
+        };
+
+        new_combo {
+            bindings = <&macro_joy_emote>;
+            key-positions = <25 15>;
         };
     };
 
@@ -338,19 +343,25 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_THUMBS_UP";
             #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp S &kp U &kp P &kp COLON &kp ENTER &kp ENTER>;
+            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp S &kp U &kp P &kp COLON>;
         };
         macro_sweat: macro_sweat {
             compatible = "zmk,behavior-macro";
             label = "MACRO_SWEAT";
             #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp S &kp W &kp E &kp A &kp T &kp ENTER &kp ENTER>;
+            bindings = <&none &kp COLON &kp S &kp W &kp E &kp A &kp T>;
         };
         macro_cheers_benroy: macro_cheers_benroy {
             compatible = "zmk,behavior-macro";
             label = "MACRO_CHEERS_BENROY";
             #binding-cells = <0>;
             bindings = <&none &kp LS(C) &kp H &kp E &kp E &kp R &kp S &kp EXCL &kp RET &kp LS(B) &kp E &kp N &kp R &kp O &kp Y>;
+        };
+        macro_joy_emote: macro_joy_emote {
+            compatible = "zmk,behavior-macro";
+            label = "MACRO_JOY_EMOTE";
+            #binding-cells = <0>;
+            bindings = <&none &kp COLON &kp J &kp O &kp Y &kp COLON>;
         };
     };
 
@@ -422,10 +433,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &mwh SCROLL_UP  &mwh SCROLL_UP  &mwh SCROLL_LEFT  &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans  &trans
-&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &mwh SCROLL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkb LCLK  &mkb RCLK   &to 0   &to 0  &mkp LCLK  &mkp RCLK
+&trans  &trans  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT    &mwh SCROLL_UP    &mwh SCROLL_UP  &mwh SCROLL_LEFT    &mmv MOVE_UP  &mwh SCROLL_RIGHT  &trans  &trans
+&trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &mwh SCROLL_DOWN  &mwh SCROLL_DOWN    &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_RIGHT  &trans  &trans
+&trans  &trans            &trans          &trans             &trans            &trans            &trans            &trans          &trans             &trans  &trans  &trans
+                                       &mkb LCLK          &mkb RCLK             &to 0             &to 0         &mkp LCLK       &mkp RCLK
             >;
         };
     };
