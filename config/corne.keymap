@@ -326,7 +326,7 @@
             key-positions = <29 25>;
         };
 
-        new_combo {
+        combo_joy_emote {
             bindings = <&macro_joy_emote>;
             key-positions = <25 15>;
         };
@@ -343,7 +343,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_THUMBS_UP";
             #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp S &kp U &kp P &kp COLON>;
+            bindings = <&none &kp COLON &kp T &kp H &kp U &kp M &kp B &kp S>;
         };
         macro_sweat: macro_sweat {
             compatible = "zmk,behavior-macro";
@@ -361,7 +361,7 @@
             compatible = "zmk,behavior-macro";
             label = "MACRO_JOY_EMOTE";
             #binding-cells = <0>;
-            bindings = <&none &kp COLON &kp J &kp O &kp Y &kp COLON>;
+            bindings = <&none &kp COLON &kp J &kp O &kp Y>;
         };
     };
 
