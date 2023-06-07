@@ -391,10 +391,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LS(LG(N4))        &kp N1          &kp N2       &kp N3         &kp N4             &kp N5   &kp N6           &kp N7           &kp N8           &kp N9  &kp N0         &kp BSPC
-  &kp LEFT_GUI      &kp LEFT          &kp UP     &kp DOWN      &kp RIGHT  &skq LEFT_COMMAND   &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
-        &trans  &kp LA(LEFT)  &skq LA(LCTRL)  &kp LC(TAB)  &kp LA(RIGHT)      &kp LA(LG(V))   &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &kp RIGHT_SHIFT
-                                                   &trans         &trans        &kp LC(TAB)  &kp RET          &kp DOT  &kp KP_NUMBER_0
+&kp LS(LG(N4))        &kp N1          &kp N2       &kp N3         &kp N4             &kp N5           &kp N6           &kp N7           &kp N8           &kp N9  &kp N0         &kp BSPC
+  &kp LEFT_GUI      &kp LEFT          &kp UP     &kp DOWN      &kp RIGHT  &skq LEFT_COMMAND           &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans
+        &trans  &kp LA(LEFT)  &skq LA(LCTRL)  &kp LC(TAB)  &kp LA(RIGHT)      &kp LA(LG(V))  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans  &kp RIGHT_SHIFT
+                                                   &trans         &trans        &kp LC(TAB)          &kp RET          &kp DOT  &kp KP_NUMBER_0
             >;
         };
 
