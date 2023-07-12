@@ -330,6 +330,11 @@
             bindings = <&macro_joy_emote>;
             key-positions = <25 15>;
         };
+
+        combo_macro_pathetic {
+            bindings = <&macro_patriotic_pathetic>;
+            key-positions = <33 30 32>;
+        };
     };
 
     macros {
