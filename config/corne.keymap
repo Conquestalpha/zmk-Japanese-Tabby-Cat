@@ -335,6 +335,11 @@
             bindings = <&macro_patriotic_pathetic>;
             key-positions = <33 30 32>;
         };
+
+        combo_backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <17 4 3>;
+        };
     };
 
     macros {
