@@ -345,6 +345,11 @@
             bindings = <&kp RIGHT_SHIFT>;
             key-positions = <31 32>;
         };
+
+        combo_right_command {
+            bindings = <&kp RIGHT_COMMAND>;
+            key-positions = <23 41>;
+        };
     };
 
     macros {
