@@ -235,8 +235,8 @@ const lv_img_dsc_t mountain = {
 #endif
 
 const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GOLDIE uint8_t goldie_map[] = {
-# 0x13, 0x13, 0x14, 0x06, 	/*Color of index 0*/
-# 0x14, 0x13, 0x12, 0xf0, 	/*Color of index 1*/
+// 0x13, 0x13, 0x14, 0x06, 	/*Color of index 0*/
+// 0x14, 0x13, 0x12, 0xf0, 	/*Color of index 1*/
 
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
         0xff, 0xff, 0xff, 0xff, /*Color of index 0*/
