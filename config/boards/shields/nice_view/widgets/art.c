@@ -1,12 +1,12 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_FLYING GOLDIE 
-#define LV_ATTRIBUTE_IMG_FLYING GOLDIE 
+#ifndef LV_ATTRIBUTE_IMG_GOLDIE
+#define LV_ATTRIBUTE_IMG_GOLDIE
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FLYING GOLDIE  uint8_t Flying Goldie _map[] = {
-#  0x13, 0x13, 0x14, 0x06, 	/*Color of index 0*/
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_GOLDIE uint8_t goldie_map[] = {
+# 0x13, 0x13, 0x14, 0x06, 	/*Color of index 0*/
 # 0x14, 0x13, 0x12, 0xf0, 	/*Color of index 1*/
 
 #if CONFIG_NICE_VIEW_WIDGET_INVERTED
@@ -97,12 +97,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FLYING GO
   0x00, 0x00, 0x00, 0x00, 0x0c, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t Flying Goldie  = {
+const lv_img_dsc_t goldie = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 64,
   .header.h = 78,
   .data_size = 632,
-  .data = Flying Goldie _map,
+  .data = goldie_map,
 };
