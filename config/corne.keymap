@@ -337,7 +337,7 @@
 
         combo_backtick {
             bindings = <&kp GRAVE>;
-            key-positions = <17 4 3>;
+            key-positions = <3 16 2>;
         };
 
         combo_right_shift {
@@ -348,6 +348,11 @@
         combo_right_command {
             bindings = <&kp RIGHT_COMMAND>;
             key-positions = <23 41>;
+        };
+
+        combo_tilde {
+            bindings = <&kp TILDE>;
+            key-positions = <17 4 3>;
         };
     };
 
